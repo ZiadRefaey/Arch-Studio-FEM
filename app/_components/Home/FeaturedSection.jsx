@@ -5,7 +5,7 @@ import PrimaryButton from "../PrimaryButton";
 
 export default function FeaturedSection() {
   return (
-    <SectionWrapper className={"py-[72px]"}>
+    <SectionWrapper className={"pt-[72px] pb-[132px] md:py-[200px]"}>
       <div className="flex items-center justify-between mb-[43px] xl:mb-[86px]">
         <h4 className="text-[3rem] font-bold leading-[52px] tracking-[-1.71px] md:text-headingM ">
           Featured

@@ -26,6 +26,42 @@ module.exports = {
         "prototype-desktop": "url('/portfolio/desktop/image-prototype.jpg')",
         "prototype-tablet": "url('/portfolio/tablet/image-prototype.jpg')",
         "prototype-mobile": "url('/portfolio/mobile/image-prototype.jpg')",
+
+        "seraph-desktop": "url('/portfolio/desktop/image-seraph.jpg')",
+        "seraph-tablet": "url('/portfolio/tablet/image-seraph.jpg')",
+        "seraph-mobile": "url('/portfolio/mobile/image-seraph.jpg')",
+
+        "eebox-desktop": "url('/portfolio/desktop/image-eebox.jpg')",
+        "eebox-tablet": "url('/portfolio/tablet/image-eebox.jpg')",
+        "eebox-mobile": "url('/portfolio/mobile/image-eebox.jpg')",
+
+        "federal-desktop": "url('/portfolio/desktop/image-federal.jpg')",
+        "federal-tablet": "url('/portfolio/tablet/image-federal.jpg')",
+        "federal-mobile": "url('/portfolio/mobile/image-federal.jpg')",
+
+        "edelweiss-desktop": "url('/portfolio/desktop/image-edelweiss.jpg')",
+        "edelweiss-tablet": "url('/portfolio/tablet/image-edelweiss.jpg')",
+        "edelweiss-mobile": "url('/portfolio/mobile/image-edelweiss.jpg')",
+
+        "netcry-desktop": "url('/portfolio/desktop/image-netcry.jpg')",
+        "netcry-tablet": "url('/portfolio/tablet/image-netcry.jpg')",
+        "netcry-mobile": "url('/portfolio/mobile/image-netcry.jpg')",
+
+        "hypers-desktop": "url('/portfolio/desktop/image-hypers.jpg')",
+        "hypers-tablet": "url('/portfolio/tablet/image-hypers.jpg')",
+        "hypers-mobile": "url('/portfolio/mobile/image-hypers.jpg')",
+
+        "sxiv-desktop": "url('/portfolio/desktop/image-sxiv.jpg')",
+        "sxiv-tablet": "url('/portfolio/tablet/image-sxiv.jpg')",
+        "sxiv-mobile": "url('/portfolio/mobile/image-sxiv.jpg')",
+
+        "paramour-desktop": "url('/portfolio/desktop/image-paramour.jpg')",
+        "paramour-tablet": "url('/portfolio/tablet/image-paramour.jpg')",
+        "paramour-mobile": "url('/portfolio/mobile/image-paramour.jpg')",
+
+        "prototype-desktop": "url('/portfolio/desktop/image-prototype.jpg')",
+        "prototype-tablet": "url('/portfolio/tablet/image-prototype.jpg')",
+        "prototype-mobile": "url('/portfolio/mobile/image-prototype.jpg')",
       },
       colors: {
         "very-dark-blue": "#1B1D23",

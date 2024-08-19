@@ -4,11 +4,12 @@ import iconNav from "@/public/icons/icon-hamburger.svg";
 
 import Image from "next/image";
 import Logo from "./Logo";
+import NavItem from "./NavItem";
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
   return (
     <>
-      <div className="w-ful px-8 py-[32px] md:py-[56px] flex items-center justify-between md:justify-start md:gap-20 xl:gap-[96px] relative z-20 bg-white">
+      <div className="w-ful px-8 py-[32px] md:py-[56px] flex items-center justify-between md:justify-start md:gap-20 xl:gap-[96px] relative z-20 bg-white  md:max-w-[573px] xl:max-w-[1110px] m-auto">
         <div className="hidden md:flex gap-12 mt-20 rotate-90 absolute -left-[183px] xl:-left-[225px]">
           <div className="w-[104px] h-[1px] bg-light-gray rounded-full"></div>
           <p className="-translate-y-[40%] text-body text-light-gray tracking-[18px]">
@@ -17,9 +18,9 @@ export default function Navbar() {
         </div>
         <Logo />
         <ul className="hidden md:flex items-center justify-center gap-[60px] xl:gap-20 text-white text-2xl">
-          <li className=" text-medium-gray text-body font-bold">Portfolio</li>
-          <li className=" text-medium-gray text-body font-bold">About Us</li>
-          <li className=" text-medium-gray text-body font-bold">Contact</li>
+          <NavItem linkTo={"/portfolio"}>Portfolio</NavItem>
+          <NavItem>About Us</NavItem>
+          <NavItem>Contact</NavItem>
         </ul>
         <Image
           onClick={() => setIsActive(!isActive)}
@@ -43,7 +44,7 @@ export default function Navbar() {
       </div>
       <div
         className={`fixed top-0 left-0 z-[15] bg-black transition-all duration-300 ${
-          isActive ? "opacity-30" : "opacity-0"
+          isActive ? "block opacity-30" : "opacity-0 hidden"
         } w-[100vw] h-[100vh] md:hidden`}
       ></div>
     </>
