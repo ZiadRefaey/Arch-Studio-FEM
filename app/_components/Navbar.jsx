@@ -30,7 +30,7 @@ export default function Navbar() {
           className="block md:hidden"
         />
         <div
-          className={`absolute overflow-hidden top-0 translate-y-[96px] -translate-x-8 transition-all duration-300 ${
+          className={`absolute overflow-hidden top-0 translate-y-[96px] -translate-x-8 transition-all duration-300 z-50 ${
             isActive ? "w-full  px-12  " : " w-[0%] px-0"
           }  bg-very-light-gray py-10 md:hidden`}
         >
@@ -42,9 +42,9 @@ export default function Navbar() {
         </div>
       </div>
       <div
-        className={`fixed top-0 left-0 z-[2] bg-black transition-all duration-300 ${
+        className={`fixed top-0 left-0 z-[15] bg-black transition-all duration-300 ${
           isActive ? "opacity-30" : "opacity-0"
-        } w-[100vw] h-[100vh] md:opacity-0`}
+        } w-[100vw] h-[100vh] md:hidden`}
       ></div>
     </>
   );

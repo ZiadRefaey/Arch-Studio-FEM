@@ -8,8 +8,24 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-desktop": "url('/public/home/desktop/image-hero-paramour.jpg')",
-        "footer-texture": "url('/img/footer-texture.png')",
+        "hero-desktop": "url('/home/desktop/image-hero-paramour.jpg')",
+        "hero-tablet": "url('/home/tablet/image-hero-paramour.jpg')",
+        "hero-mobile": "url('/home/mobile/image-hero-paramour.jpg')",
+        "small-team-desktop": "url('/home/desktop/image-small-team.jpg')",
+        "small-team-tablet": "url('/home/tablet/image-small-team.jpg')",
+        "small-team-mobile": "url('/home/mobile/image-small-team.jpg')",
+
+        "228b-desktop": "url('/portfolio/desktop/image-228b.jpg')",
+        "228b-tablet": "url('/portfolio/tablet/image-228b.jpg')",
+        "228b-mobile": "url('/portfolio/mobile/image-228b.jpg')",
+
+        "del-sol-desktop": "url('/portfolio/desktop/image-del-sol.jpg')",
+        "del-sol-tablet": "url('/portfolio/tablet/image-del-sol.jpg')",
+        "del-sol-mobile": "url('/portfolio/mobile/image-del-sol.jpg')",
+
+        "prototype-desktop": "url('/portfolio/desktop/image-prototype.jpg')",
+        "prototype-tablet": "url('/portfolio/tablet/image-prototype.jpg')",
+        "prototype-mobile": "url('/portfolio/mobile/image-prototype.jpg')",
       },
       colors: {
         "very-dark-blue": "#1B1D23",
