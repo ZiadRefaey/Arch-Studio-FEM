@@ -62,6 +62,10 @@ module.exports = {
         "prototype-desktop": "url('/portfolio/desktop/image-prototype.jpg')",
         "prototype-tablet": "url('/portfolio/tablet/image-prototype.jpg')",
         "prototype-mobile": "url('/portfolio/mobile/image-prototype.jpg')",
+
+        "trinity-desktop": "url('/portfolio/desktop/image-trinity.jpg')",
+        "trinity-tablet": "url('/portfolio/tablet/image-trinity.jpg')",
+        "trinity-mobile": "url('/portfolio/mobile/image-trinity.jpg')",
       },
       colors: {
         "very-dark-blue": "#1B1D23",
@@ -93,6 +97,14 @@ module.exports = {
           {
             lineHeight: "4rem",
             letterSpacing: "-0.125rem",
+            fontWeight: "700",
+          },
+        ],
+        MobileHeadingM: [
+          "3rem",
+          {
+            lineHeight: "3.25rem",
+            letterSpacing: "-1.2px",
             fontWeight: "700",
           },
         ],

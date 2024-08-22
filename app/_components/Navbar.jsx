@@ -5,6 +5,7 @@ import iconNav from "@/public/icons/icon-hamburger.svg";
 import Image from "next/image";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
+import Link from "next/link";
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
   return (
@@ -16,11 +17,13 @@ export default function Navbar() {
             HOME
           </p>
         </div>
-        <Logo />
+        <Link href={"/"}>
+          <Logo />
+        </Link>
         <ul className="hidden md:flex items-center justify-center gap-[60px] xl:gap-20 text-white text-2xl">
           <NavItem linkTo={"/portfolio"}>Portfolio</NavItem>
-          <NavItem>About Us</NavItem>
-          <NavItem>Contact</NavItem>
+          <NavItem linkTo={"/about-us"}>About Us</NavItem>
+          <NavItem linkTo={"/portfolio"}>Contact</NavItem>
         </ul>
         <Image
           onClick={() => setIsActive(!isActive)}
