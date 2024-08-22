@@ -12,7 +12,7 @@ export default function AboutContactTopSection({
 }) {
   return (
     <>
-      <div className="relative w-full h-[240px] xl:max-w-[635px] md:h-[720px]">
+      <div className="relative w-full h-[240px] xl:max-w-[635px] md:h-[720px] mb-[365px] md:mb-[200px]">
         <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-10"></div>
         <Image
           src={imgMobile}

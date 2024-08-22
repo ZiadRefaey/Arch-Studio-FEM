@@ -5,7 +5,7 @@ import HeritageImg from "@/public/about/desktop/image-heritage.jpg";
 import SectionWrapper from "../SectionWrapper";
 export default function OurHeritageSection() {
   return (
-    <SectionWrapper className="mt-[365px] md:mt-[200px] flex items-center justify-between gap-[124px] mb-[112px] md:mb-[207px]">
+    <SectionWrapper className="flex items-center justify-between gap-[124px] mb-[112px] md:mb-[207px]">
       <div className="w-[558px]">
         <SeperatorLine
           className={"mb-[68px] md:mb-[49px] xl:mb-[82px] max-w-[300px"}

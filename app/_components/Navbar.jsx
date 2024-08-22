@@ -23,7 +23,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center justify-center gap-[60px] xl:gap-20 text-white text-2xl">
           <NavItem linkTo={"/portfolio"}>Portfolio</NavItem>
           <NavItem linkTo={"/about-us"}>About Us</NavItem>
-          <NavItem linkTo={"/portfolio"}>Contact</NavItem>
+          <NavItem linkTo={"/contact"}>Contact</NavItem>
         </ul>
         <Image
           onClick={() => setIsActive(!isActive)}
