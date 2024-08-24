@@ -1,4 +1,3 @@
-import React from "react";
 import SectionWrapper from "../SectionWrapper";
 import HomeFeaturedComponentCard from "../HomeFeaturedComponentCard";
 import PrimaryButton from "../PrimaryButton";
@@ -14,18 +13,21 @@ export default function FeaturedSection() {
       </div>
       <div className="flex flex-col gap-6 xl:flex-row xl:gap-[30px]">
         <HomeFeaturedComponentCard
+          delay={0}
           title={"Project Del Sol"}
           bg={"bg-del-sol-mobile md:bg-del-sol-tablet xl:bg-del-sol-desktop"}
           order={"1"}
         />
 
         <HomeFeaturedComponentCard
+          delay={0.75}
           title={"228B Tower"}
           bg={"bg-228b-mobile md:bg-228b-tablet xl:bg-228b-desktop"}
           order={"2"}
         />
 
         <HomeFeaturedComponentCard
+          delay={1.5}
           title={"Le Prototype"}
           bg={
             "bg-prototype-mobile md:bg-prototype-tablet xl:bg-prototype-desktop"

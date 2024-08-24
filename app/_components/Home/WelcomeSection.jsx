@@ -1,18 +1,30 @@
+"use client";
 import React from "react";
 import SectionWrapper from "../SectionWrapper";
 import Image from "next/image";
 import ImageWelcome from "@/public/home/desktop/image-welcome.jpg";
-
+import { motion } from "framer-motion";
 export default function WelcomeSection() {
   return (
     <SectionWrapper className={"pt-[72px] pb-[117px] relative"}>
       <div className="h-[1px] w-[65px] bg-light-gray md:hidden"></div>
-      <p className="hidden md:block absolute top-[72px] left-0 text-[120px] tracking-[-3px] leading-[200px] font-bold text-very-light-gray xl:text-[250px] xl:trackign-[-5px]">
+      <motion.p
+        viewport={{ once: true }}
+        initial={{ x: -200 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.5 }}
+        className="hidden md:block absolute top-[72px] left-0 text-[120px] tracking-[-3px] leading-[200px] font-bold text-very-light-gray xl:text-[250px] xl:trackign-[-5px] z-20"
+      >
         Welcome
-      </p>
+      </motion.p>
       <div className="flex items-center justify-end ">
-        <div className="xl:max-w-[921px] flex items-center justify-center gap-[125px] ">
-          <div>
+        <motion.div className="xl:max-w-[921px] flex items-center justify-center gap-[125px] ">
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ x: -200 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <h2 className="text-[48px] font-bold leading-[52px] tracking-[-1.71px] md:text-headingM max-w-[311px] md:max-w-[446px] mt-[68px] md:mt-[159px]">
               Welcome to Arch Studio
             </h2>
@@ -33,13 +45,23 @@ export default function WelcomeSection() {
               surrounding area to create truly stunning projects that will stand
               the test of time.
             </p>
-          </div>
-          <Image
-            src={ImageWelcome}
-            alt="Image Welcome"
-            className="hidden xl:block mt-[73px]"
-          />
-        </div>
+          </motion.div>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ x: 200 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            typeof="spring"
+            className="w-[1050px] h-[568px] relative hidden xl:block mt-[73px] bg-black z-0"
+          >
+            <Image
+              fill
+              src={ImageWelcome}
+              alt="Image Welcome"
+              className=" w-full h-full object-cover"
+            />
+          </motion.div>
+        </motion.div>
       </div>
     </SectionWrapper>
   );

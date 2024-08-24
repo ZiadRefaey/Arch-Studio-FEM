@@ -1,8 +1,12 @@
-import React from "react";
-
-export default function HomeFeaturedComponentCard({ bg, title, order }) {
+"use client";
+import { motion } from "framer-motion";
+export default function HomeFeaturedComponentCard({ bg, title, order, delay }) {
   return (
-    <div
+    <motion.div
+      initial={{ x: -200, opacity: 0 }}
+      viewport={{ once: true }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.75, delay: delay }}
       className={`${bg} bgdelso relative p-6 md:p-10 w-full h-[240px] xl:h-[560px] flex items-end justify-start bg-no-repeat bg-cover text-white`}
     >
       <p className="hidden md:block absolute top-[29px] right-4 text-white/60 z-50 text-[250px] leading-[200px] tracking-[-5px] font-bold xl:-right-4">
@@ -13,6 +17,6 @@ export default function HomeFeaturedComponentCard({ bg, title, order }) {
         <p className=" text-headingS ">{title}</p>
         <p className=" text-body text-white/60">View All Projects</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
