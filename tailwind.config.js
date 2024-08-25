@@ -8,9 +8,22 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-desktop": "url('/home/desktop/image-hero-paramour.jpg')",
-        "hero-tablet": "url('/home/tablet/image-hero-paramour.jpg')",
-        "hero-mobile": "url('/home/mobile/image-hero-paramour.jpg')",
+        "hero-1-desktop": "url('/home/desktop/image-hero-paramour.jpg')",
+        "hero-1-tablet": "url('/home/tablet/image-hero-paramour.jpg')",
+        "hero--mobile": "url('/home/mobile/image-hero-paramour.jpg')",
+
+        "hero-2-desktop": "url('/home/desktop/image-hero-seraph.jpg')",
+        "hero-2-tablet": "url('/home/tablet/image-hero-seraph.jpg')",
+        "hero-2-mobile": "url('/home/mobile/image-hero-seraph.jpg')",
+
+        "hero-3-desktop": "url('/home/desktop/image-hero-federal.jpg')",
+        "hero-3-tablet": "url('/home/tablet/image-hero-federal.jpg')",
+        "hero-3-mobile": "url('/home/mobile/image-hero-federal.jpg')",
+
+        "hero-4-desktop": "url('/home/desktop/image-hero-trinity.jpg')",
+        "hero-4-tablet": "url('/home/tablet/image-hero-trinity.jpg')",
+        "hero-4-mobile": "url('/home/mobile/image-hero-trinity.jpg')",
+
         "small-team-desktop": "url('/home/desktop/image-small-team.jpg')",
         "small-team-tablet": "url('/home/tablet/image-small-team.jpg')",
         "small-team-mobile": "url('/home/mobile/image-small-team.jpg')",

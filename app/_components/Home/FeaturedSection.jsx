@@ -20,14 +20,14 @@ export default function FeaturedSection() {
         />
 
         <HomeFeaturedComponentCard
-          delay={0.75}
+          delay={0.5}
           title={"228B Tower"}
           bg={"bg-228b-mobile md:bg-228b-tablet xl:bg-228b-desktop"}
           order={"2"}
         />
 
         <HomeFeaturedComponentCard
-          delay={1.5}
+          delay={1}
           title={"Le Prototype"}
           bg={
             "bg-prototype-mobile md:bg-prototype-tablet xl:bg-prototype-desktop"

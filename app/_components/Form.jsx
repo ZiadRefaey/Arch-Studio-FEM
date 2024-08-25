@@ -1,9 +1,16 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 import Arrow from "@/public/icons/icon-arrow.svg";
 import Image from "next/image";
 export default function Form() {
   return (
-    <form className="flex flex-col gap-[22px] xl:w-[730px]">
+    <motion.form
+      viewport={{ once: true }}
+      initial={{ x: -200, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 11 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col gap-[22px] xl:w-[730px]"
+    >
       <input
         className="px-8 py-5 placeholder:text-light-gray border-b-very-dark-blue w-full border-b-[1px] focus:border-b-[3px]  text-[1.25rem] tracking-[-0.31px] font-bold outline-none"
         placeholder="Name"
@@ -21,6 +28,6 @@ export default function Form() {
       <button className="px-7 py-[31px] bg-very-dark-blue inline-block max-w-20 self-end mt-[-22px] hover:bg-dark-gray duration-300 transition-all">
         <Image src={Arrow} alt="arrow icon" />
       </button>
-    </form>
+    </motion.form>
   );
 }

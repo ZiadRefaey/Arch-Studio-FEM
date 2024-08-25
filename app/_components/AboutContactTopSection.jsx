@@ -1,5 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 
 import SeperatorLine from "./SeperatorLine";
 export default function AboutContactTopSection({
@@ -32,16 +33,28 @@ export default function AboutContactTopSection({
           className="w-full h-full object-cover hidden xl:block"
           alt="About hero image"
         />
-        <p className="hidden md:block absolute top-[204px] right-0 text-[120px] md:text-[160px] xl:top-[130px] xl:-right-[475px] tracking-[-3px] leading-[200px] font-bold text-very-light-gray xl:text-[250px] xl:trackign-[-5px] z-30">
+        <motion.p
+          viewport={{ once: true }}
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="hidden md:block absolute top-[204px] right-0 text-[120px] md:text-[160px] xl:top-[130px] xl:-right-[475px] tracking-[-3px] leading-[200px] font-bold text-very-light-gray xl:text-[250px] xl:trackign-[-5px] z-30"
+        >
           {pageTitle}
-        </p>
-        <div className=" bg-white  pr-8 pl-8 pt-[65px] md:pt-[88px] md:pl-[59px] xl:pl-[182px] xl:pt-[160px] absolute left-0 bottom-0 w-[343px] z-20 translate-y-[calc(100%-45px)] md:w-[572px] md:bottom-0 md:translate-y-0 md:left-auto md:right-[-57px] xl:right-[-640px] xl:w-[793px] xl:top-[217px] ">
+        </motion.p>
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className=" bg-white  pr-8 pl-8 pt-[65px] md:pt-[88px] md:pl-[59px] xl:pl-[182px] xl:pt-[160px] absolute left-0 bottom-0 w-[343px] z-20 translate-y-[calc(100%-45px)] md:w-[572px] md:bottom-0 md:translate-y-0 md:left-auto md:right-[-57px] xl:right-[-640px] xl:w-[793px] xl:top-[217px] "
+        >
           <SeperatorLine className={"mb-[73px] xl:mb-[57px] hidden"} />
           <h1 className="text-black text-MobileHeadingM md:text-headingM mb-[21px]">
             {title}
           </h1>
           <p className="text-body max-w-[445px]">{paragraph}</p>
-        </div>
+        </motion.div>
       </div>
     </>
   );

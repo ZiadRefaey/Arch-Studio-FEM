@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 import SecondaryButton from "../SecondaryButton";
 
 export default function ContactCard({
@@ -7,9 +8,14 @@ export default function ContactCard({
   address,
   phone,
   className,
+  delay,
 }) {
   return (
-    <div
+    <motion.div
+      viewport={{ once: true }}
+      initial={{ x: -200, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5, delay: delay }}
       className={`${className} flex flex-col gap-11 md:flex-row md:justify-between md:items-center text-dark-gray xl:flex-col`}
     >
       <div>
@@ -23,6 +29,6 @@ export default function ContactCard({
       >
         View on Map
       </SecondaryButton>
-    </div>
+    </motion.div>
   );
 }

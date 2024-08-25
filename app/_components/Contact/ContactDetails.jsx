@@ -13,6 +13,7 @@ export default function ContactDetails() {
         Contact Details
       </h2>
       <ContactCard
+        delay={0}
         className={"mb-10 xl:mb-0"}
         title={"Main Office"}
         mail={"archone@mail.com"}
@@ -20,6 +21,7 @@ export default function ContactDetails() {
         phone={"123-456-3451"}
       />
       <ContactCard
+        delay={0.5}
         title={"Main Office"}
         mail={"archone@mail.com"}
         address={"1892  Chenoweth Drive TN"}
