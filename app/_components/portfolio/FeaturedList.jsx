@@ -64,8 +64,9 @@ const FeaturedCards = [
 export default function FeaturedList() {
   return (
     <div className="mt-[56px] mb-[132px] px-8 flex flex-col gap-6 xl:flex-wrap xl:flex-row xl:gap-[30px]">
-      {FeaturedCards.map((featuredCard) => (
+      {FeaturedCards.map((featuredCard, index) => (
         <FeaturedCard
+          order={index}
           key={featuredCard.title}
           title={featuredCard.title}
           bg={featuredCard.bg}
