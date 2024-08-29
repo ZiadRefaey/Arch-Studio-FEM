@@ -2,6 +2,7 @@ import { League_Spartan } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/_components/Navbar";
 import Footer from "./_components/Footer";
+import CurrentPage from "./_components/CurrentPage";
 
 const leagueSpartan = League_Spartan({ subsets: ["latin"], display: "swap" });
 

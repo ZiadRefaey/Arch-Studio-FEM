@@ -1,22 +1,20 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import iconNav from "@/public/icons/icon-hamburger.svg";
 
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
 import Link from "next/link";
+import CurrentPage from "./CurrentPage";
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
+
   return (
     <>
-      <div className="w-ful px-8 py-[32px] md:py-[56px] flex items-center justify-between md:justify-start md:gap-20 xl:gap-[96px] relative z-20 bg-white  md:max-w-[573px] xl:max-w-[1110px] m-auto">
-        <div className="hidden md:flex gap-12 mt-20 rotate-90 absolute -left-[183px] xl:-left-[225px]">
-          <div className="w-[104px] h-[1px] bg-light-gray rounded-full"></div>
-          <p className="-translate-y-[40%] text-body text-light-gray tracking-[18px]">
-            HOME
-          </p>
-        </div>
+      <div className="w-full px-8 py-[32px] md:py-[56px] flex items-center justify-between md:justify-start md:gap-20 xl:gap-[96px] relative z-20 bg-white  md:max-w-[573px] xl:max-w-[1110px] m-auto">
+        <CurrentPage />
         <Link href={"/"}>
           <Logo />
         </Link>
